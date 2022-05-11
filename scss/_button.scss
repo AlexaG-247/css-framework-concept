@@ -1,0 +1,60 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+/*
+ * Button
+ */
+
+.btn{
+	padding: var(--btn-padding);
+	margin: var(--btn-margin);
+
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+
+	background-color: var(--btn-background-color);
+	border-style: var(--btn-border-style);
+	border-width: var(--btn-border-width);
+	border-color: var(--btn-border-color);
+	border-radius: var(--btn-border-radius);
+	box-shadow: var(--btn-box-shadow);
+	color: var(--btn-color);
+	backdrop-filter: var(--btn-backdrop-filter);
+
+	&:hover{
+		background-color: var(--btn-hover-background-color);
+		border-color: var(--btn-hover-border-color);
+		box-shadow: var(--btn-hover-box-shadow);
+		color: var(--btn-hover-color);
+	}
+
+	&:active, &.active{
+		background-color: var(--btn-active-background-color);
+		border-color: var(--btn-active-border-color);
+		box-shadow: var(--btn-active-box-shadow);
+		color: var(--btn-active-color);
+	}
+
+	&:focus{
+		background-color: var(--btn-focus-background-color);
+		border-color: var(--btn-focus-border-color);
+		box-shadow: var(--btn-focus-box-shadow);
+		color: var(--btn-focus-color);
+	}
+
+	&:disabled, &.disabled{
+		background-color: var(--btn-disabled-background-color);
+		border-color: var(--btn-disabled-border-color);
+		box-shadow: var(--btn-disabled-box-shadow);
+		color: var(--btn-disabled-color);
+
+		cursor: not-allowed;
+	}
+}

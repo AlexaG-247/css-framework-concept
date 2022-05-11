@@ -1,0 +1,1238 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Variables
+ */
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ *	Themes
+ */
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root,
+:root.minimalism {
+  --white: #fff;
+  --grey-50: #f7f9fc;
+  --grey-100: #f2f5fa;
+  --grey-200: #e1e6f0;
+  --grey-300: #cad2e0;
+  --grey-400: #939eb8;
+  --grey-500: #65708c;
+  --grey-600: #475169;
+  --grey-700: #323c54;
+  --grey-800: #1e263b;
+  --grey-900: #0f1429;
+  --grey-1000: #080a15;
+  --black: #000;
+  --primary-50: #fef2f5;
+  --primary-100: #fee6ed;
+  --primary-200: #fdcede;
+  --primary-300: #fba6c2;
+  --primary-400: #f8729e;
+  --primary-500: #f0447c;
+  --primary-600: #de2260;
+  --primary-700: #be154d;
+  --primary-800: #9e1543;
+  --primary-900: #86163d;
+  --primary-1000: #540e27;
+  --font-sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --base-font-family: var(--font-sans-serif);
+  --base-line-height: 1.5;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-color: var(--grey-200);
+  --border-radius: .25rem;
+  --box-shadow: 1px 1px 1px 0 rgb(225, 230, 240, .1);
+  --backdrop-filter: none;
+  --typography-margin-bottom: .75rem;
+  --typography-margin-top: 0;
+  --h1-font-size: 4.5rem;
+  --h2-font-size: 3.75rem;
+  --h3-font-size: 3rem;
+  --h4-font-size: 2.25rem;
+  --h5-font-size: 1.5rem;
+  --h6-font-size: 1.25rem;
+  --p-font-size: 1rem;
+  --small-font-size: .75rem;
+  --body-background-color: var(--white);
+  --body-color: var(--grey-1000);
+  --btn-padding: .5rem 1.5rem;
+  --btn-margin: 0 0 .5rem 0;
+  --btn-background-color: var(--body-background-color)
+	--btn-color: var(--body-color);
+  --btn-backdrop-filter: var(--backdrop-filter);
+  --btn-border-width: var(--border-width);
+  --btn-border-style: var(--border-style);
+  --btn-border-color: var(--border-color);
+  --btn-border-radius: var(--border-radius);
+  --btn-box-shadow: var(--box-shadow);
+  --btn-active-background-color: var(--grey-200);
+  --btn-active-border-color: var(--btn-border-color);
+  --btn-active-box-shadow: var(--btn-box-shadow);
+  --btn-active-color: var(--btn-color);
+  --btn-disabled-background-color: var(--grey-100);
+  --btn-disabled-border-color: var(--btn-border-color);
+  --btn-disabled-box-shadow: none;
+  --btn-disabled-color: var(--grey-500);
+  --btn-focus-background-color: var(--grey-200);
+  --btn-focus-border-color: var(--grey-400);
+  --btn-focus-box-shadow: 0 0 1px 2px rgb(147, 158, 184, .25);
+  --btn-focus-color: var(--btn-color);
+  --btn-hover-background-color: var(--grey-200);
+  --btn-hover-border-color: var(--btn-border-color);
+  --btn-hover-box-shadow: var(--btn-box-shadow);
+  --btn-hover-color: var(--btn-color);
+  --card-margin: 0;
+  --card-padding: 1rem;
+  --card-background-color: var(--body-background-color);
+  --card-backdrop-filter: var(--backdrop-filter);
+  --card-border-width: var(--border-width);
+  --card-border-color: var(--border-color);
+  --card-border-style: var(--border-style);
+  --card-border-radius: var(--border-radius);
+  --card-box-shadow: var(--box-shadow);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root.dark,
+:root.minimalism.dark {
+  --border-color: var(--grey-800);
+  --box-shadow: 1px 1px 1px 0 rgb(30, 38, 59, .1);
+  --backdrop-filter: none;
+  --body-background-color: var(--grey-1000);
+  --body-color: var(--grey-50);
+  --btn-background-color: var(--grey-900);
+  --btn-active-background-color: var(--grey-700);
+  --btn-disabled-background-color: var(--body-background-color);
+  --btn-disabled-box-shadow: none;
+  --btn-disabled-color: var(--grey-500);
+  --btn-focus-background-color: var(--grey-700);
+  --btn-focus-border-color: var(--grey-500);
+  --btn-focus-box-shadow: 0 0 1px 2px rgb(101, 112, 140, .25);
+  --btn-hover-background-color: var(--grey-700);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root.brutalism {
+  --border-width: 2px;
+  --border-color: var(--black);
+  --border-radius: 0;
+  --box-shadow: 2px 2px 0 0 var(--black);
+  --body-color: var(--black);
+  --btn-background-color: var(--body-background-color)
+	--btn-color: var(--body-color);
+  --btn-active-background-color: var(--btn-background-color);
+  --btn-active-border-color: var(--primary-500);
+  --btn-active-box-shadow: 2px 2px 0 0 var(--primary-500);
+  --btn-active-color: var(--primary-500);
+  --btn-disabled-background-color: var(--grey-100);
+  --btn-disabled-border-color: var(--grey-500);
+  --btn-disabled-box-shadow: var(--grey-500);
+  --btn-disabled-color: var(--grey-500);
+  --btn-focus-background-color: var(--grey-200);
+  --btn-focus-border-color: var(--primary-500);
+  --btn-focus-box-shadow: 2px 2px 0 0 var(--primary-500);
+  --btn-focus-color: var(--primary-500);
+  --btn-hover-background-color: var(--grey-200);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root.brutalism.dark {
+  --border-color: var(--white);
+  --box-shadow: 2px 2px 0 0 var(--white);
+  --body-background-color: var(--black);
+  --body-color: var(--white);
+  --btn-background-color: var(--body-background-color)
+	--btn-color: var(--body-color);
+  --btn-active-background-color: var(--btn-background-color);
+  --btn-active-border-color: var(--primary-500);
+  --btn-active-box-shadow: 2px 2px 0 0 var(--primary-500);
+  --btn-active-color: var(--primary-500);
+  --btn-disabled-background-color: var(--btn-color);
+  --btn-disabled-border-color: var(--grey-400);
+  --btn-disabled-box-shadow: var(--grey-400);
+  --btn-disabled-color: var(--grey-400);
+  --btn-focus-background-color: var(--grey-800);
+  --btn-focus-border-color: var(--primary-500);
+  --btn-focus-box-shadow: 2px 2px 0 0 var(--primary-500);
+  --btn-focus-color: var(--primary-500);
+  --btn-hover-background-color: var(--grey-800);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root.glassmorphism {
+  --border-color: rgba(255,255,255,.1);
+  --border-radius: .5rem;
+  --box-shadow: 1px 2px 4px rgb(8, 10, 21, 0.1);
+  --backdrop-filter: blur(6px);
+  --body-background-color: linear-gradient(90deg, hsla(220, 33%, 91%, 1) 0%, hsla(340, 92%, 90%, 1) 100%);
+  --body-color: var(--grey-1000);
+  --btn-background-color: rgba(255,255,255,.3);
+  --btn-backdrop-filter: var(--backdrop-filter);
+  --btn-border-radius: 2rem;
+  --btn-active-background-color: rgba(255,255,255,.9);
+  --btn-disabled-background-color: var(--btn-background-color);
+  --btn-disabled-border-color: var(--btn-border-color);
+  --btn-disabled-box-shadow: none;
+  --btn-disabled-color: var(--grey-400);
+  --btn-focus-background-color: rgba(255,255,255,.9);
+  --btn-focus-border-color: var(--btn-border-color);
+  --btn-focus-box-shadow: var(--btn-box-shadow);
+  --btn-focus-color: var(--btn-color);
+  --btn-hover-background-color: rgba(255,255,255,.6);
+  --card-background-color: rgba(255,255,255,.3);
+  --card-backdrop-filter: var(--backdrop-filter);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+:root.glassmorphism.dark {
+  --border-color: rgba(255,255,255,.05);
+  --body-background-color: linear-gradient(90deg, hsla(231, 45%, 6%, 1) 0%, hsla(223, 33%, 17%, 1) 100%);
+  --body-color: var(--white);
+  --btn-background-color: rgba(255,255,255,.1);
+  --btn-active-background-color: rgba(255,255,255,.4);
+  --btn-focus-background-color: rgba(255,255,255,.4);
+  --btn-hover-background-color: rgba(255,255,255,.25);
+  --card-background-color: rgba(255,255,255,.1);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Mixins
+ */
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Theme
+ */
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*!
+ * CSS resets used from normalize.css v8.0.1
+ * normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+ * Comments are shortened due to compactness
+ */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Base
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
+}
+
+body {
+  background: var(--body-background-color);
+  color: var(--body-color);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Button
+ */
+
+.btn {
+  padding: var(--btn-padding);
+  margin: var(--btn-margin);
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--btn-background-color);
+  border-style: var(--btn-border-style);
+  border-width: var(--btn-border-width);
+  border-color: var(--btn-border-color);
+  border-radius: var(--btn-border-radius);
+  box-shadow: var(--btn-box-shadow);
+  color: var(--btn-color);
+  -webkit-backdrop-filter: var(--btn-backdrop-filter);
+  backdrop-filter: var(--btn-backdrop-filter);
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-background-color);
+  border-color: var(--btn-hover-border-color);
+  box-shadow: var(--btn-hover-box-shadow);
+  color: var(--btn-hover-color);
+}
+
+.btn:active,
+.btn.active {
+  background-color: var(--btn-active-background-color);
+  border-color: var(--btn-active-border-color);
+  box-shadow: var(--btn-active-box-shadow);
+  color: var(--btn-active-color);
+}
+
+.btn:focus {
+  background-color: var(--btn-focus-background-color);
+  border-color: var(--btn-focus-border-color);
+  box-shadow: var(--btn-focus-box-shadow);
+  color: var(--btn-focus-color);
+}
+
+.btn:disabled,
+.btn.disabled {
+  background-color: var(--btn-disabled-background-color);
+  border-color: var(--btn-disabled-border-color);
+  box-shadow: var(--btn-disabled-box-shadow);
+  color: var(--btn-disabled-color);
+  cursor: not-allowed;
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Card
+ */
+
+.card {
+  margin: var(--card-margin);
+  padding: var(--card-padding);
+  overflow: hidden;
+  background-color: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+  -webkit-backdrop-filter: var(--card-backdrop-filter);
+  backdrop-filter: var(--card-backdrop-filter);
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: var(--card-border-color);
+  border-radius: var(--card-border-radius);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Layout
+ */
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  padding: 1.5rem;
+}
+
+.container > .tile {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.container > .tile:last-child {
+  margin-bottom: -0.75rem;
+}
+
+.tile {
+  align-items: stretch;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+}
+
+.tile.tile-vertical {
+  flex-direction: column;
+}
+
+.tile.tile-horizontal {
+  flex-direction: row;
+}
+
+.tile.tile-1 {
+  flex: none;
+  width: 8.3333333333%;
+}
+
+.tile.tile-2 {
+  flex: none;
+  width: 16.6666666667%;
+}
+
+.tile.tile-3 {
+  flex: none;
+  width: 25%;
+}
+
+.tile.tile-4 {
+  flex: none;
+  width: 33.3333333333%;
+}
+
+.tile.tile-5 {
+  flex: none;
+  width: 41.6666666667%;
+}
+
+.tile.tile-6 {
+  flex: none;
+  width: 50%;
+}
+
+.tile.tile-7 {
+  flex: none;
+  width: 58.3333333333%;
+}
+
+.tile.tile-8 {
+  flex: none;
+  width: 66.6666666667%;
+}
+
+.tile.tile-9 {
+  flex: none;
+  width: 75%;
+}
+
+.tile.tile-10 {
+  flex: none;
+  width: 83.3333333333%;
+}
+
+.tile.tile-11 {
+  flex: none;
+  width: 91.6666666667%;
+}
+
+.tile.tile-12 {
+  flex: none;
+  width: 100%;
+}
+
+.box {
+  flex: 1 1 0;
+  display: block;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Typography
+ */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+small {
+  margin-top: var(--typography-margin-bottom);
+  margin-bottom: var(--typography-margin-bottom);
+}
+
+h1,
+.h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2,
+.h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3,
+.h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4,
+.h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5,
+.h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6,
+.h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+small {
+  font-size: var(--small-font-size);
+}
+
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+/*
+ * Utilities
+ */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+@media (min-width: 0) {
+  .tile.tile-xs-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-xs-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-xs-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-xs-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-xs-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-xs-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-xs-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-xs-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-xs-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-xs-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-xs-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-xs-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-xs-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-xs-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .tile.tile-sm-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-sm-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-sm-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-sm-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-sm-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-sm-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-sm-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-sm-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-sm-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-sm-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-sm-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-sm-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-sm-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-sm-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .tile.tile-md-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-md-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-md-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-md-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-md-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-md-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-md-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-md-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-md-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-md-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-md-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-md-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-md-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-md-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .tile.tile-lg-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-lg-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-lg-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-lg-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-lg-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-lg-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-lg-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-lg-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-lg-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-lg-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-lg-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-lg-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-lg-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-lg-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .tile.tile-xl-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-xl-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-xl-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-xl-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-xl-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-xl-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-xl-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-xl-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-xl-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-xl-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-xl-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-xl-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-xl-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-xl-12 {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+
+  .tile.tile-xxl-vertical {
+    flex-direction: column;
+  }
+
+  .tile.tile-xxl-horizontal {
+    flex-direction: column;
+  }
+
+  .tile.tile-xxl-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .tile.tile-xxl-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .tile.tile-xxl-3 {
+    flex: none;
+    width: 25%;
+  }
+
+  .tile.tile-xxl-4 {
+    flex: none;
+    width: 33.3333333333%;
+  }
+
+  .tile.tile-xxl-5 {
+    flex: none;
+    width: 41.6666666667%;
+  }
+
+  .tile.tile-xxl-6 {
+    flex: none;
+    width: 50%;
+  }
+
+  .tile.tile-xxl-7 {
+    flex: none;
+    width: 58.3333333333%;
+  }
+
+  .tile.tile-xxl-8 {
+    flex: none;
+    width: 66.6666666667%;
+  }
+
+  .tile.tile-xxl-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .tile.tile-xxl-10 {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .tile.tile-xxl-11 {
+    flex: none;
+    width: 91.6666666667%;
+  }
+
+  .tile.tile-xxl-12 {
+    flex: none;
+    width: 100%;
+  }
+}

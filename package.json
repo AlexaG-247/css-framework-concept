@@ -1,0 +1,28 @@
+{
+  "name": "css-framework-concept",
+  "version": "1.0.0",
+  "description": "Created by Alexandra Gierer as part of her Bachelor's thesis in the Bachelor Computer Science degree programme at the University of Applied Sciences Technikum Wien",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.12",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "node": "10.14.2"
+  },
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp compileSass",
+    "serve": "gulp serve"
+  },
+  "author": "Alexandra Gierer",
+  "license": "ISC",
+  "type": "module"
+}

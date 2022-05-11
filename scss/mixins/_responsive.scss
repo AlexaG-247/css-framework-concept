@@ -1,0 +1,31 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+@mixin media-query-min($min) {
+	$breakpoint: map-get($breakpoints, $min);
+	@media (min-width: $breakpoint) {
+		@content;
+	}
+}
+
+@mixin media-query-max($max) {
+	$breakpoint: map-get($breakpoints, $max);
+	@media (max-width: $breakpoint) {
+		@content;
+	}
+}
+
+@mixin media-query-between($min, $max) {
+	$breakpoint-min: map-get($breakpoints, $min);
+	$breakpoint-max: map-get($breakpoints, $max);
+
+	@media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+		@content;
+	}
+}

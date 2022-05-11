@@ -1,0 +1,21 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+/*
+ *	Themes
+ */
+ 
+@import './themes/root';
+@import './themes/root-dark';
+@import './themes/brutalism';
+@import './themes/brutalism-dark';
+@import './themes/glassmorphism';
+@import './themes/glassmorphism-dark';
+
+@import 'globals-theme';

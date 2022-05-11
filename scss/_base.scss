@@ -1,0 +1,27 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+/*
+ * Base
+ */
+
+html{
+	box-sizing: border-box;
+}
+
+*, :after, :before{
+	box-sizing: inherit;
+	line-height: var(--base-line-height);
+	font-family: var(--base-font-family)
+}
+
+body{
+	background: var(--body-background-color);
+	color: var(--body-color);
+}

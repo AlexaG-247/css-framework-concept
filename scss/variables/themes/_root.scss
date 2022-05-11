@@ -1,0 +1,123 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+:root, :root.minimalism
+{
+	//COLORS
+	--white: #fff;
+	--grey-50: #f7f9fc;
+	--grey-100: #f2f5fa;
+	--grey-200: #e1e6f0;
+	--grey-300: #cad2e0;
+	--grey-400: #939eb8;
+	--grey-500: #65708c;
+	--grey-600: #475169;
+	--grey-700: #323c54;
+	--grey-800: #1e263b;
+	--grey-900: #0f1429;
+	--grey-1000: #080a15;
+	--black:#000;
+
+	--primary-50: #fef2f5;
+	--primary-100: #fee6ed;
+	--primary-200: #fdcede;
+	--primary-300: #fba6c2;
+	--primary-400: #f8729e;
+	--primary-500: #f0447c;
+	--primary-600: #de2260;
+	--primary-700: #be154d;
+	--primary-800: #9e1543;
+	--primary-900: #86163d;
+	--primary-1000: #540e27;
+
+
+	//FONTS
+	--font-sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+	//BASE
+	--base-font-family: var(--font-sans-serif);
+	--base-line-height: 1.5;
+
+	--border-style: solid;
+	--border-width: 1px;
+	--border-color: var(--grey-200);
+	--border-radius: .25rem;
+
+	--box-shadow: 1px 1px 1px 0 rgb(225, 230, 240, .1);
+
+	--backdrop-filter: none;
+
+	--typography-margin-bottom: .75rem;
+	--typography-margin-top: 0;
+
+	--h1-font-size: 4.5rem;
+	--h2-font-size: 3.75rem;
+	--h3-font-size: 3rem;
+	--h4-font-size: 2.25rem;
+	--h5-font-size: 1.5rem;
+	--h6-font-size: 1.25rem;
+	--p-font-size: 1rem;
+	--small-font-size: .75rem;
+
+	//BODY
+	--body-background-color: var(--white);
+	--body-color: var(--grey-1000);
+
+
+	//BUTTONS - btn
+	--btn-padding: .5rem 1.5rem;
+	--btn-margin: 0 0 .5rem 0;
+
+	--btn-background-color: var(--body-background-color)
+	--btn-color: var(--body-color);
+	--btn-backdrop-filter: var(--backdrop-filter);
+
+	--btn-border-width: var(--border-width);
+	--btn-border-style: var(--border-style);
+	--btn-border-color: var(--border-color);
+	--btn-border-radius: var(--border-radius);
+	--btn-box-shadow: var(--box-shadow);
+
+	--btn-active-background-color: var(--grey-200);
+	--btn-active-border-color: var(--btn-border-color);
+	--btn-active-box-shadow: var(--btn-box-shadow);
+	--btn-active-color: var(--btn-color);
+
+	--btn-disabled-background-color: var(--grey-100);
+	--btn-disabled-border-color: var(--btn-border-color);
+	--btn-disabled-box-shadow: none;
+	--btn-disabled-color: var(--grey-500);
+
+	--btn-focus-background-color: var(--grey-200);
+	--btn-focus-border-color: var(--grey-400);
+	--btn-focus-box-shadow: 0 0 1px 2px rgb(147, 158, 184, .25);
+	--btn-focus-color: var(--btn-color);
+
+	--btn-hover-background-color: var(--grey-200);
+	--btn-hover-border-color: var(--btn-border-color);
+	--btn-hover-box-shadow: var(--btn-box-shadow);
+	--btn-hover-color: var(--btn-color);
+
+
+	//CARD - card
+	--card-margin: 0;
+	--card-padding: 1rem;
+
+	--card-background-color: var(--body-background-color);
+	--card-backdrop-filter: var(--backdrop-filter);
+
+	--card-border-width: var(--border-width);
+	--card-border-color: var(--border-color);
+	--card-border-style: var(--border-style);
+	--card-border-radius: var(--border-radius);
+	--card-box-shadow: var(--box-shadow);
+}

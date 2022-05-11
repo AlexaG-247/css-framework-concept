@@ -1,0 +1,28 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+$container-widths: (
+	sm: 450px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1520px,
+) !default;
+
+$breakpoints: (
+	xs: 0,
+	sm: 480px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px,
+) !default;
+
+$tiles-count: 12 !default;
+$spacer: 1rem  !default;

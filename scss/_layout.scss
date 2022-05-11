@@ -1,0 +1,98 @@
+/*!
+ * CSS Framework Concept
+ * Alexandra Gierer
+ * May 2022
+ *
+ * Created as part of the Bachelor Thesis.
+ */
+
+
+/*
+ * Layout
+ */
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+	padding: $spacer * 1.5;
+
+	@each $key, $value in $breakpoints {
+		@include media-query-min($key){
+			max-width: map-get($container-widths, $key);
+		}
+	}
+
+	> .tile {
+		margin-left: -$spacer * 0.75;
+		margin-right: -$spacer * 0.75;
+		margin-top: -$spacer * 0.75;
+		margin-bottom: $spacer * 0.75;
+		flex-wrap: wrap;
+
+		&:last-child {
+			margin-bottom: -$spacer * 0.75;
+		}
+	}
+}
+
+.tile {
+	align-items: stretch;
+	display: flex;
+
+	flex: 1 1 0;
+	flex-direction: row;
+
+	&.tile-vertical {
+		flex-direction: column;
+	}
+
+	&.tile-horizontal {
+		flex-direction: row;
+	}
+
+	//tiles-breakpoint-vertical
+	@each $key, $value in $breakpoints {
+		@include media-query-min($key){
+			&.tile-#{$key}-vertical {
+				flex-direction: column;
+			}
+		}
+	}
+
+	//tiles-breakpoint-horizontal
+	@each $key, $value in $breakpoints {
+		@include media-query-min($key){
+			&.tile-#{$key}-horizontal {
+				flex-direction: column;
+			}
+		}
+	}
+
+	//tile-number
+	@for $i from 1 through $tiles-count {
+		&.tile-#{$i} {
+			flex: none;
+			width: calc(100% / $tiles-count) * $i;
+		}
+	}
+
+	//tile-breakpoint-number
+	@each $key, $value in $breakpoints {
+		@include media-query-min($key){
+			@for $i from 1 through $tiles-count {
+				&.tile-#{$key}-#{$i} {
+					flex: none;
+					width: calc(100% / $tiles-count) * $i;
+				}
+			}
+		}
+	}
+}
+
+.box {
+    flex: 1 1 0;
+	display: block;
+	padding: $spacer;
+	margin: $spacer * 0.75;
+}
